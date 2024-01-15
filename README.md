@@ -14,7 +14,7 @@ Template for a .NET service application solution/project. Update all following i
 - RootNamespace in TeqBench.Dev.Templates.DotNet.ServiceApp.csproj
 - AssemblyName in TeqBench.Dev.Templates.DotNet.ServiceApp.csproj
 
-Also have to update Project's settings.
+Also have to update repository's settings.
 
 - Add branch protect for the `main` branch.
     - Navigate to `Settings > Branches`.
