@@ -14,6 +14,28 @@ Template for a .NET service application solution/project. Update all following i
 - RootNamespace in TeqBench.Dev.Templates.DotNet.ServiceApp.csproj
 - AssemblyName in TeqBench.Dev.Templates.DotNet.ServiceApp.csproj
 
+Also have to update Project's settings.
+
+- Add branch protect for the `main` branch.
+    - Navigate to `Settings > Branches`.
+    - Select `Add rule`.
+    - Select `Require a pull request before merging`.
+        - Select `Require approvals`.
+        - Select `Allow specified actors to bypass required pull requests`.
+            - Add user `devops-teqbench`.
+    - Select `Require status checks to pass before merging`.
+        - `Require branches to be up to date before merging`.
+        - Add the status check `` after running manual build one time from repo Actions.
+    - Select `Require conversation resolution before merging`.
+    - Leave all other settings as default values.
+    - Select `Save`.
+- Update Actions configuration.
+    - Navigate to `Settings > Actions > General`.
+    - Select `Allow teqbench, and select non-teqbench, actions and reusable workflows`
+        - Select `Allow actions created by GitHub`.
+    - Select `Save`.
+    - Leave all other settings as default values.
+
 ## Contents
 - [Developer Environment Setup](#Developer+Environment+Setup)
 - [Usage](#Usage)
