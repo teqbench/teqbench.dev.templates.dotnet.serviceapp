@@ -4,7 +4,14 @@
 
 ## Overview
 
-Template for a .NET service application solution/project. Update all following instances of `TeqBench.Dev.Templates.DotNet.ServiceApp`:
+Template for a .NET service application solution/project.
+
+> [!NOTE]
+> After cloning, remember to init the submodules. See [https://github.com/teqbench/teqbench.dev](https://github.com/teqbench/teqbench.dev) for more information.
+
+### Update Template Names
+
+Update all following instances of `TeqBench.Dev.Templates.DotNet.ServiceApp`:
 
 - Solution name
     - TeqBench.Dev.Templates.DotNet.ServiceApp.sln
@@ -13,6 +20,8 @@ Template for a .NET service application solution/project. Update all following i
     - TeqBench.Dev.Templates.DotNet.ServiceApp.Tests.csproj
 - RootNamespace in TeqBench.Dev.Templates.DotNet.ServiceApp.csproj
 - AssemblyName in TeqBench.Dev.Templates.DotNet.ServiceApp.csproj
+
+### Update Repository Settings
 
 Also have to update repository's settings.
 
