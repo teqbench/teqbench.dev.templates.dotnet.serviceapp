@@ -12,3 +12,7 @@ jobs:
     name: CI Job
     uses: teqbench/teqbench.devops.githhub.workflows/.github/workflows/build-with-concurrency.yml@main
     secrets: inherit
+    with:
+      # Bypass tests for the template, but when create a repo from this template, remove
+      # the bypass_tests parameter to re-enable to test step of the workflow.
+      bypass_tests: true
